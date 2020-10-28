@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="/static/header_file.css">
+<link rel="stylesheet" type="text/css" href="/static/footer_file.css">
+<link rel="stylesheet" type="text/css" href="/static/main.css">
+<link rel="stylesheet" type="text/css" href="/static/audio_to_text.css">
+<script src="/static/recorder.js"></script>
+<script src="/static/audiodisplay.js"></script>
+<script src="/static/main.js"></script>
+<script src="/static/recorderWorker.js"></script>
+
+</head>
+    <body style="background-color: #F1FBFE;">
+    
+    
+    <div id="loaderEsim">
+        <p class="audioTextHeading"><i class="micIcon"></i>Voice interaction with eSim</p>
+    </div>
+
+    <div id="loader">
+        <div class="row " style="position:relative;">
+            <div class="column1">
+                <h2>Ask a question</h2>
+                    <button id="start" class="btn btn-success" onclick="startRecording()" ><i class="fa fa-play" aria-hidden="true"></i>Start recording</button>
+                     <button id="stop" class="btn btn-danger" onclick="stopRecording()" style="display: none;"><i class="fa fa-stop" aria-hidden="true"></i>Stop recording</button>
+            </div>
+            <div class="column2" >
+                <h2>The question that was registered</h2>
+                <p class="questionAnswer" id="output">Pending question</p>               
+            </div>
+        </div>
+    </div>
+        
+ <!--   <audio src="/static/SoundFilesCAIPrototype/AreYouAllergicToAnything/noiamnotallergictoanything.mp3" controls>
+        <embed name="GoodEnough" src="/static/SoundFilesCAIPrototype/AreYouAllergicToAnything/noiamnotallergictoanything.mp3" loop="false" hidden="true" autostart="true">
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+         -->
+
+         <script>
+             
+         </script>
+    </body>
+    
+</html>
