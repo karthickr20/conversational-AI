@@ -43,9 +43,9 @@ function stopRecording() {
     audioRecorder.stop();
     //document.getElementById('stop').disabled = true;
     //document.getElementById('start').removeAttribute('disabled');
-    //audioRecorder.getBuffers(gotBuffers);      
-    document.getElementById('start').style.display = 'block';
-    document.getElementById('stop').style.display = 'none';
+    audioRecorder.getBuffers(gotBuffers);      
+    // document.getElementById('start').style.display = 'block';
+    // document.getElementById('stop').style.display = 'none';
 }
 
 function startRecording() {
@@ -57,10 +57,10 @@ function startRecording() {
    // document.getElementById('stop').removeAttribute('disabled');
     audioRecorder.clear();
     audioRecorder.record();
-    document.getElementById('start').style.display = 'none';
-    document.getElementById('stop').style.display = 'block';
+    // document.getElementById('start').style.display = 'none';
+    // document.getElementById('stop').style.display = 'block';
     
-    audioRecorder.getBuffers(gotBuffers);    
+    //audioRecorder.getBuffers(gotBuffers);    
     sleep(2000).then(() => {
     stopRecording();
 }
